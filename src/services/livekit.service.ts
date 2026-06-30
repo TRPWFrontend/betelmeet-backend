@@ -28,7 +28,7 @@ export class LivekitService {
     // ── Participant limit check ──────────────────────────────────────────────
     // Count current participants in the room (0 if room doesn't exist yet).
     // Limit: max 5 total (host + 4 attendees).
-    const MAX_PARTICIPANTS = 5;
+    const MAX_PARTICIPANTS = 10;
     try {
       const roomService = getRoomService();
       const participants = await roomService.listParticipants(roomName);
